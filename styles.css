@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: dodgerblue;
+    display: flex;
+    padding: 1rem;
+    
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover {
+    color: skyblue;
+}
+
+header nav a#nav-user {
+    font-weight: bold;
+}
+
+h2, h3, h5 {
+    font-weight: bolder;
+    background-color: turquoise;
+    margin-top: 0;
+}
+
+input, select, button {
+    height: 1.75rem;
+    font-size: 1rem;
+}
+
+body {
+    font-family: verdana;
+    margin: 0;
+    color: #666;
+  }
+
+.btn {
+    /* align-items: center; */
+    display: flex;
+    justify-content: center
+}
+
+#createNewUser {
+    border: solid 1px blue;
+    margin: 0 30% 0 30%;
+    padding: 10px;
+    margin: 0 auto
+    
+}
+.userInfoBox {
+    width: calc(100%/3 - 1rem); 
+    margin: 0.5rem;
+    border: solid 1px black;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.user-box {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-end; */
+}
+
+form > div > input,select {
+    flex: 3;
+}
+
+/* div > div {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+@media (max-width:600px){
+
+    header {
+        flex-direction: coloumn;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-box > div {
+        width: calc(100% - 1rem);
+    }
+
+    form{
+        width: 100%
+    }
+
+    form > div {
+        flex-direction: column;
+    }
+
+    form > div > labe {
+        margin-bottom: 1rem;
+    }
+}
